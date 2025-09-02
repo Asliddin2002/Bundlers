@@ -1,0 +1,1 @@
+console.log("This is app js file, typescript"),console.log({API:"http://e-commerce-api"}),console.log("All transpiled to TypeScript, jkshdgfjhgsdgfhj");
