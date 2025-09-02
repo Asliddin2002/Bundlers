@@ -23,7 +23,7 @@ export default (env: Env) => {
     compress: true,
   };
   const config: Configuration = {
-    entry: path.resolve(__dirname, "src", "app.ts"),
+    entry: path.resolve(__dirname, "src", "main.tsx"),
     // entry: {
     //   main: path.resolve(__dirname, "src", "index.js"),
     //   app: path.resolve(__dirname, "src", "app.js"),
@@ -52,7 +52,9 @@ export default (env: Env) => {
 
     // loaders
     module: {
-      rules: [{ test: /\.ts?$/, use: "ts-loader", exclude: /node_modules/ }],
+      rules: [
+        { test: /\.(ts|tsx)?$/, use: "ts-loader", exclude: /node_modules/ },
+      ],
     },
     resolve: {
       extensions: [".tsx", ".ts", ".js"],

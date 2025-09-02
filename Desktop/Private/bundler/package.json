@@ -14,16 +14,20 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "ts-loader": "^9.5.4"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@types/dotenv-webpack": "^7.0.8",
     "@types/node": "^24.3.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "@types/webpack": "^5.28.5",
-    "@types/ -dev-server": "^4.7.1",
+    "@types/webpack-dev-server": "^4.7.1",
     "cross-env": "^10.0.0",
     "dotenv-webpack": "^8.1.1",
     "html-webpack-plugin": "^5.6.4",
+    "ts-loader": "^9.5.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "webpack": "^5.101.3",
