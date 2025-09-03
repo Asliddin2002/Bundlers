@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+import "./style.css";
+import "./style.scss";
+
 const App = () => {
   const [state, setState] = useState(0);
 

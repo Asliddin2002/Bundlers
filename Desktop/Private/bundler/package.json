@@ -8,9 +8,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=production webpack --env mode=production",
-    "dev": "cross-env NODE_ENV=development webpack --env mode=development",
-    "start": "webpack serve --env mode=development"
+    "build": "webpack --env mode=production",
+    "dev": "webpack --env mode=development",
+    "start": "webpack serve --env mode=development --env port=3001"
   },
   "dependencies": {
     "lodash": "^4.17.21",
@@ -25,8 +25,13 @@
     "@types/webpack": "^5.28.5",
     "@types/webpack-dev-server": "^4.7.1",
     "cross-env": "^10.0.0",
+    "css-loader": "^7.1.2",
     "dotenv-webpack": "^8.1.1",
     "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "sass": "^1.92.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
     "ts-loader": "^9.5.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
