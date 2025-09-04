@@ -21,7 +21,18 @@ export function buildLoaders({ mode }: BuildType): RuleSetRule[] {
     test: /\.s[ac]ss$/i,
     use: [
       mode === "production" ? MiniCssExtractPlugin.loader : "style-loader",
-      "css-loader",
+      {
+        loader: "css-loader",
+        options: {
+          modules: {
+            namedExport: false,
+            localIdentName:
+              mode === "production"
+                ? "[hash:base64]"
+                : "[name]__[local]__[hash:base64]",
+          },
+        },
+      },
       "sass-loader",
     ],
   };
